@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Cleary Photography | Bishopbriggs & Glasgow Headshots</title>
+    <style>
+        :root {
+            --primary: #222;
+            --accent: #d4af37; /* Gold accent for a premium feel */
+            --light: #f4f4f4;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--primary);
+            background-color: var(--white);
+        }
+
+        header {
+            background: var(--white);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: var(--white);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background: #111;
+            color: white;
+            padding: 100px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .promo-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--primary);
+            padding: 5px 15px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-radius: 50px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f9f9f9;
+        }
+
+        .print-section {
+            background: var(--light);
+            padding: 60px 5%;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--primary);
+            color: white;
+        }
+
+        .contact-number {
+            font-size: 1.5rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Ryan Cleary Photography</div>
+    <a href="tel:07432692950" class="cta-button">Call 07432692950</a>
+</header>
+
+<section class="hero">
+    <div class="promo-badge">LAUNCH OFFER: 30% OFF FIRST 100 CUSTOMERS</div>
+    <h1>Premium Headshots in Bishopbriggs</h1>
+    <p>Professional imagery for Business, Actors, Families & Couples.</p>
+</section>
+
+<div class="container">
+    <h2>Digital Collections</h2>
+    <div class="pricing-grid">
+        <div class="card">
+            <h3>The Quick Look</h3>
+            <div class="price">£95</div>
+            <ul class="features">
+                <li>20-Minute Studio Session</li>
+                <li>1 Fully Edited Digital Image</li>
+                <li>Online Gallery Selection</li>
+            </ul>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--accent);">
+            <div style="background: var(--accent); color: #000; font-size: 0.8rem; font-weight: bold; padding: 5px;">MOST POPULAR</div>
+            <h3>Professional Plus</h3>
+            <div class="price">£100*</div>
+            <p><small>*Special Launch Price (Was £145)</small></p>
+            <ul class="features">
+                <li>45-Minute Studio Session</li>
+                <li>3-5 Fully Edited Digital Images</li>
+                <li>Multiple Outfit Changes</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Personal Brand</h3>
+            <div class="price">£275</div>
+            <ul class="features">
+                <li>90-Minute Full Session</li>
+                <li>10+ Edited Digital Images</li>
+                <li>Full Commercial Rights</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section class="print-section">
+    <h2>On-Site Printing & Framing</h2>
+    <p>Don't leave your memories on a hard drive. Walk out of the studio with your portrait ready to hang.</p>
+    <div class="price">£40</div>
+    <p><strong>A4 Professional Print + Modern Frame</strong><br>
+    (Edited and assembled while you wait)</p>
+    <p><em>Additional Digital Edits: £25 per image</em></p>
+</section>
+
+<div class="container" style="text-align: center;">
+    <h2>The Studio</h2>
+    <p>Located in <strong>Bishopbriggs</strong>, our modern professional setup offers a comfortable experience with <strong>free on-site parking</strong>. We serve Glasgow and the surrounding areas with high-end equipment and instant delivery options.</p>
+    <br>
+    <a href="tel:07432692950" class="contact-number">07432692950</a>
+</div>
+
+<footer>
+    <p>&copy; 2026 Ryan Cleary Photography | Bishopbriggs, Glasgow</p>
+</footer>
+
+</body>
+</html>
