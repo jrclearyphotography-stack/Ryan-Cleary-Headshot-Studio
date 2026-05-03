@@ -6,9 +6,9 @@
     <title>Ryan Cleary Photography | Bishopbriggs & Glasgow Headshots</title>
     <style>
         :root {
-            --primary: #222;
-            --accent: #d4af37; /* Gold accent for a premium feel */
-            --light: #f4f4f4;
+            --primary: #1a1a1a;
+            --accent: #d4af37;
+            --light: #f8f8f8;
             --white: #ffffff;
         }
 
@@ -22,7 +22,7 @@
 
         header {
             background: var(--white);
-            padding: 20px 5%;
+            padding: 15px 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -33,7 +33,7 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: bold;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -45,19 +45,19 @@
             padding: 10px 20px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 5px;
+            border-radius: 4px;
+            font-size: 0.9rem;
         }
 
         .hero {
             background: #111;
             color: white;
-            padding: 100px 5%;
+            padding: 80px 5%;
             text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
+            /* To use a background image for the hero, uncomment the line below and upload Hero.jpg */
+            /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Hero.jpg'); */
+            background-size: cover;
+            background-position: center;
         }
 
         .promo-badge {
@@ -68,6 +68,7 @@
             font-weight: bold;
             margin-bottom: 20px;
             border-radius: 50px;
+            font-size: 0.8rem;
         }
 
         .container {
@@ -91,29 +92,39 @@
 
         .card {
             border: 1px solid #eee;
-            padding: 30px;
+            padding: 0 0 30px 0; /* padding bottom only to let image hit edges */
             text-align: center;
             transition: 0.3s;
+            overflow: hidden;
         }
 
-        .card:hover {
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .card-content {
+            padding: 0 30px;
         }
 
         .price {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: bold;
-            margin: 20px 0;
+            margin: 15px 0;
         }
 
         .features {
             list-style: none;
             padding: 0;
             margin-bottom: 30px;
+            font-size: 0.95rem;
         }
 
         .features li {
-            padding: 10px 0;
+            padding: 8px 0;
             border-bottom: 1px solid #f9f9f9;
         }
 
@@ -124,17 +135,21 @@
             margin-top: 50px;
         }
 
+        .contact-number {
+            font-size: 1.8rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin: 20px 0;
+        }
+
         footer {
             text-align: center;
             padding: 40px;
-            background: var(--primary);
-            color: white;
-        }
-
-        .contact-number {
-            font-size: 1.5rem;
-            color: var(--accent);
-            text-decoration: none;
+            background: #111;
+            color: #888;
+            font-size: 0.8rem;
         }
     </style>
 </head>
@@ -142,66 +157,77 @@
 
 <header>
     <div class="logo">Ryan Cleary Photography</div>
-    <a href="tel:07432692950" class="cta-button">Call 07432692950</a>
+    <a href="tel:07432692950" class="cta-button">BOOK NOW</a>
 </header>
 
 <section class="hero">
     <div class="promo-badge">LAUNCH OFFER: 30% OFF FIRST 100 CUSTOMERS</div>
-    <h1>Premium Headshots in Bishopbriggs</h1>
-    <p>Professional imagery for Business, Actors, Families & Couples.</p>
+    <h1>Premium Headshots in Glasgow</h1>
+    <p>Professional photography for Business, Actors, Families & Couples.</p>
 </section>
 
 <div class="container">
-    <h2>Digital Collections</h2>
+    <h2>Pricing & Packages</h2>
     <div class="pricing-grid">
+        
         <div class="card">
-            <h3>The Quick Look</h3>
-            <div class="price">£95</div>
-            <ul class="features">
-                <li>20-Minute Studio Session</li>
-                <li>1 Fully Edited Digital Image</li>
-                <li>Online Gallery Selection</li>
-            </ul>
+            <div style="height: 250px; background: #eee; display: flex; align-items: center; justify-content: center; color: #aaa;">[Quick Look Image]</div>
+            <div class="card-content">
+                <h3>The Quick Look</h3>
+                <div class="price">£95</div>
+                <ul class="features">
+                    <li>20-Minute Studio Session</li>
+                    <li>1 Fully Edited Digital Image</li>
+                    <li>Perfect for LinkedIn Updates</li>
+                </ul>
+            </div>
         </div>
 
         <div class="card" style="border: 2px solid var(--accent);">
-            <div style="background: var(--accent); color: #000; font-size: 0.8rem; font-weight: bold; padding: 5px;">MOST POPULAR</div>
-            <h3>Professional Plus</h3>
-            <div class="price">£100*</div>
-            <p><small>*Special Launch Price (Was £145)</small></p>
-            <ul class="features">
-                <li>45-Minute Studio Session</li>
-                <li>3-5 Fully Edited Digital Images</li>
-                <li>Multiple Outfit Changes</li>
-            </ul>
+            <div style="background: var(--accent); color: #000; font-size: 0.7rem; font-weight: bold; padding: 5px; text-transform: uppercase;">Most Popular</div>
+            <img src="Business1.jpg" alt="Professional Business Headshot by Ryan Cleary">
+            <div class="card-content">
+                <h3>Professional Plus</h3>
+                <div class="price">£100*</div>
+                <p><small>*Special Launch Price (Was £145)</small></p>
+                <ul class="features">
+                    <li>45-Minute Studio Session</li>
+                    <li>3-5 Fully Edited Digital Images</li>
+                    <li>Multiple Outfit Changes</li>
+                </ul>
+            </div>
         </div>
 
         <div class="card">
-            <h3>Personal Brand</h3>
-            <div class="price">£275</div>
-            <ul class="features">
-                <li>90-Minute Full Session</li>
-                <li>10+ Edited Digital Images</li>
-                <li>Full Commercial Rights</li>
-            </ul>
+            <div style="height: 250px; background: #eee; display: flex; align-items: center; justify-content: center; color: #aaa;">[Personal Brand Image]</div>
+            <div class="card-content">
+                <h3>Personal Brand</h3>
+                <div class="price">£275</div>
+                <ul class="features">
+                    <li>90-Minute Full Session</li>
+                    <li>10+ Edited Digital Images</li>
+                    <li>Full Commercial Rights</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 
 <section class="print-section">
-    <h2>On-Site Printing & Framing</h2>
-    <p>Don't leave your memories on a hard drive. Walk out of the studio with your portrait ready to hang.</p>
-    <div class="price">£40</div>
-    <p><strong>A4 Professional Print + Modern Frame</strong><br>
-    (Edited and assembled while you wait)</p>
-    <p><em>Additional Digital Edits: £25 per image</em></p>
+    <div class="container">
+        <h2>On-Site Printing & Framing</h2>
+        <p>Your portrait, ready to hang. We edit, print, and frame your A4 image on-site.</p>
+        <div class="price">£40</div>
+        <p><strong>A4 Professional Print + Modern Frame</strong></p>
+        <p><small>Additional Digital Edits: £25 per image</small></p>
+    </div>
 </section>
 
 <div class="container" style="text-align: center;">
     <h2>The Studio</h2>
-    <p>Located in <strong>Bishopbriggs</strong>, our modern professional setup offers a comfortable experience with <strong>free on-site parking</strong>. We serve Glasgow and the surrounding areas with high-end equipment and instant delivery options.</p>
-    <br>
+    <p>Located in <strong>Bishopbriggs</strong>, our studio features a modern professional setup with <strong>free parking</strong> for all clients. We provide high-end retouching and instant physical prints.</p>
     <a href="tel:07432692950" class="contact-number">07432692950</a>
+    <p>Call or Text to secure your launch discount.</p>
 </div>
 
 <footer>
